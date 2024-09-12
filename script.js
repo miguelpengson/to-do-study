@@ -1,6 +1,6 @@
 function addTask() {
-    const taskInput = document.getElementById('new-task');
-    const taskList = document.getElementById('task-list');
+    const taskInput = document.getElementById('new-task'); // adding text input
+    const taskList = document.getElementById('task-list'); // list of tasks added by the addTask function
     if (taskInput.value.trim() !== '') { //checks for empty string after trimming and leading or trailing whitespace
         const li = document.createElement('li'); //creates a new list item element
         li.className = 'task'; // used to asign a CSS class to an HTML element for styling
