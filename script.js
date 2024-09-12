@@ -6,7 +6,7 @@ function addTask() {
         li.className = 'task'; // used to asign a CSS class to an HTML element for styling
         li.textContent = taskInput.value; // sets the text content of the html element to the value of the input field
         const deleteButton = document.createElement('button'); //creates a new button element storing a reference to the variable deleteButton
-        deleteButton.textContent = 'Delete'; // button text delete
+        deleteButton.textContent = 'Delete'; // button text delete textContent - replaces existing text content of that element with a new string value
         deleteButton.onclick = function() {
             taskList.removeChild(li);
         }; // onclick event handler that removes the list item when the button is clicked
